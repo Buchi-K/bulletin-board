@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>○○掲示板</title>
 </head>
 <body>
@@ -13,11 +14,15 @@
     </div>
     
 
+    <div class="resister">
+      <a href="regi.php">会員登録画面</a>
+    </div>
 
-    会員登録画面
 
-
-    ゲストでやる
+    <div class="guests">
+      <a href="boards.php">ゲストで参加</a>
+    </div>
+   
 
 
 
