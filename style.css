@@ -1,9 +1,13 @@
+@charset "UTF-8";
+/* home.phpのスタイル */
 #container {
   text-align: center;
   width: 60%;
   margin: 50px auto 20px auto;
   border: 2px solid black;
   background-color: #5d595024;
+  -webkit-box-shadow: 6px 4px 10px;
+          box-shadow: 6px 4px 10px;
 }
 
 #container .resister {
@@ -20,7 +24,30 @@
   margin: 10px 20px 10px 20px;
 }
 
+/* regi,phpのスタイル*/
 #box {
   text-align: center;
+  width: 60%;
+  height: 60%;
+  border: 2px solid black;
+  background-color: #5d595024;
+  -webkit-box-shadow: 6px 4px 10px;
+          box-shadow: 6px 4px 10px;
+  margin: 50px auto 20px auto;
+}
+
+#box .form dl dt {
+  width: 165px;
+  padding: 3px 0;
+  float: left;
+  clear: both;
+}
+
+#box .form dl dd {
+  padding: 3px 0;
+}
+
+#box .form .submit {
+  margin: 20px 10px 10px 0px;
 }
 /*# sourceMappingURL=style.css.map */

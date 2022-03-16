@@ -1,9 +1,11 @@
+/* home.phpのスタイル */
 #container {
   text-align: center;
   width: 60%;
   margin: 50px auto 20px auto;
   border: 2px solid black;
   background-color: #5d595024;
+  box-shadow: 6px 4px 10px;
   
   .resister {
     text-align: center;
@@ -19,6 +21,29 @@
   }
 }
 
+/* regi,phpのスタイル*/
 #box {
   text-align: center;
+  width: 60%;
+  height: 60%;
+  border: 2px solid black;
+  background-color: #5d595024;
+  box-shadow: 6px 4px 10px;
+  margin: 50px auto 20px auto;
+  .form {
+    dl {
+      dt {
+        width: 165px;
+        padding: 3px 0;
+        float: left;
+        clear: both
+      }
+      dd {
+        padding:3px 0;
+      }  
+    }
+    .submit {
+      margin: 20px 10px 10px 0px;
+    }
+  }
 }
