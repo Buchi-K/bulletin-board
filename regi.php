@@ -1,3 +1,27 @@
+<?php
+require('dbconnect.php');
+$error = [];
+$form = [];
+
+// 入力フォームから値を受け取り //
+if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
+  $form['email'] = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+  if ($form['email'] === '') {
+    $error['email'] = 'blank';
+  }
+
+  $form['password'] = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
+  if ($form['password'] === '') {
+    $error['password'] = 'blank';
+  }
+
+  $form['name'] = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+  if ($form['name'] === '') {
+    $error['name'] = 'blank';
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,15 +40,15 @@
           <dl>
             <div class="email">
               <dt>メールアドレス： </dt>
-              <dd><input type="text" name="email" class="email"></dd>
+              <dd><input type="text" name="email" class="email" autocomplete="email"></dd>
             </div>
             <div class="password">
               <dt>パスワード： </dt>
-              <dd><input type="text" name="password" class="password"></dd>
+              <dd><input type="text" name="password" class="password" autocomplete="current-password"></dd>
             </div>
             <div class="name">
               <dt>ニックネーム： </dt>
-              <dd><input type="text" name="name" class="name"></dd>
+              <dd><input type="text" name="name" class="name" autocomplete="nickname"></dd>
             </div>
             <div class="submit">
               <input type="submit" value="登録する">
