@@ -39,19 +39,25 @@ if ($_SERVER ['REQUEST_METHOD'] === 'POST') {
         <form action="" method="post" class="form">
           <dl>
             <div class="email">
-              <dt>メールアドレス： </dt>
-              <dd><input type="text" name="email" class="email" autocomplete="email"></dd>
+              <label class="label">
+                <dt>メールアドレス <span class="required">必須</span></dt>
+                <dd><input type="text" name="email" class="email" required autocomplete="email" maxlength="255"></dd>
+              </label>
             </div>
             <div class="password">
-              <dt>パスワード： </dt>
-              <dd><input type="text" name="password" class="password" autocomplete="current-password"></dd>
+              <label class="label">
+                <dt>パスワード <span class="required">必須</span></dt>
+                <dd><input type="text" name="password" class="password" required autocomplete="current-password" maxlength="255"></dd>
+              </label>  
             </div>
             <div class="name">
-              <dt>ニックネーム： </dt>
-              <dd><input type="text" name="name" class="name" autocomplete="nickname"></dd>
+              <label class="label">
+                <dt>ニックネーム <span class="required">必須</span></dt>
+                <dd><input type="text" name="name" class="name" required autocomplete="nickname" maxlength="255"></dd>
+              </label>
             </div>
             <div class="submit">
-              <input type="submit" value="登録する">
+              <input type="submit" class=submit-btn value="登録する">
             </div>
           </dl>
       </form>

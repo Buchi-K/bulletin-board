@@ -36,6 +36,15 @@
   margin: 50px auto 20px auto;
 }
 
+#box .form dl .required {
+  background-color: #e91e63;
+  color: #fff;
+  border-radius: 20%;
+  font-size: 90%;
+  padding: 3px;
+  margin-left: 10px;
+}
+
 #box .form dl dt {
   width: 165px;
   padding: 3px 0;
@@ -49,5 +58,23 @@
 
 #box .form .submit {
   margin: 20px 10px 10px 0px;
+}
+
+#box .form .submit-btn {
+  position: relative;
+  background-color: white;
+  border-radius: 20%;
+  border-color: white;
+  color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#box .form .submit-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
